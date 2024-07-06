@@ -30,6 +30,10 @@ static NSString *EnabledKey(NSString *name) {
 }
 
 static BOOL TweakEnabled(NSString *name) {
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:EnabledKey(name)]) {
+        // Nếu không có giá trị, đặt giá trị mặc định là YES
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:EnabledKey(name)];
+    }
     return [[NSUserDefaults standardUserDefaults] boolForKey:EnabledKey(name)];
 }
 
