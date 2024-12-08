@@ -1,6 +1,6 @@
 // Settings
 
-"VIDEO_OVERLAY" = "YouMute & YouQuality";
+"VIDEO_OVERLAY" = "YouMute & YouQuality & YouSpeed";
 "TOP" = "Top";
 "TOP_DESC" = "At the top-right, where autoplay, captions, cast and overflow menu are.";
 "BOTTOM" = "Bottom";
